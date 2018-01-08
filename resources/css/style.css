@@ -1,4 +1,111 @@
 html {
   font-family: 'Montserrat', sans-serif;
-  border: 1px solid black;
+  font-size: 16px;
+  color: #444;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: White;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.colmar {
+  font-weight: 600;
+}
+
+.academy {
+  color: #999;
+}
+
+.menu_desktop {
+  align-items: center;
+  display: flex;
+}
+
+.menu_desktop ul {
+  display: flex;
+  flex-direction: row;
+  padding-right: .5rem;
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  color: #666;
+}
+
+.menu_desktop ul li {
+  padding-right: 1rem;
+}
+
+.gray_background {
+  background-color: #ccc;
+}
+
+.cointainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.large_capsule {
+  width: 60%;
+  overflow: hidden;
+  padding: 1.5rem 2rem;
+}
+
+.large_capsule img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.medium_capsule {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  width: 40%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+.start_button {
+  background-color: #555;
+  color: white;
+  text-align: center;
+  width: 18rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
