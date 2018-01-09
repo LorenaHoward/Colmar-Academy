@@ -194,4 +194,23 @@ h2 .center {
 
 .portrait_capsule {
   width: 30%;
+  background-color: #eee;
+  margin-right: 2rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.rectangular_container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rectangular_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p.rectangular_container  {
+  padding-bottom: 1rem;
 }
