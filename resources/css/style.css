@@ -116,6 +116,13 @@ h3 {
   font-weight: 400;
 }
 
+.medium_capsule {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+  width: 40%;
+}
+
 .lighter_background {
   background-color: #eee;
 }
@@ -160,10 +167,17 @@ p {
   display: block;
 }
 
+ .square_container_enlarge img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
 h4 {
   font-size: 1.2rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
+  line-height: 1.8rem;
 }
 
 .read_more {
@@ -175,10 +189,8 @@ h4 {
 .text_container {
   display: flex;
   flex-direction: column;
-  padding-left: 1rem;
-  position: relative;
-  top: -50%;
-  transform: translateY(20%);
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 h2 .center {
@@ -186,7 +198,7 @@ h2 .center {
 }
 
 .sixpack_container {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   padding: 0 4.5rem;
   overflow: hidden;
@@ -202,15 +214,53 @@ h2 .center {
 
 .rectangular_container {
   width: 100%;
-  overflow: hidden;
 }
 
 .rectangular_container img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-bottom: 1rem;
 }
 
-p.rectangular_container  {
-  padding-bottom: 1rem;
+.courses {
+  padding: 0.5rem 0
+}
+
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.medium_capsuletop {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 1.4rem auto;
+}
+
+.media_container video {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  font-family: "helvetica" , sans-serif;
+  font-size: 0.8rem;
+  color: #999;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ccc;
+}
+
+footer ul {
+  display: flex;
+  flex-direction:row;
+}
+
+footer ul li {
+  padding-right: 1rem;
 }
