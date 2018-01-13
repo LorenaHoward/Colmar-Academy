@@ -21,6 +21,10 @@ nav {
   z-index: 1;
 }
 
+.mobile_nav {
+  display: none;
+}
+
 .logo_container {
   display: flex;
   flex-direction: row;
@@ -28,11 +32,11 @@ nav {
   padding-left: 1.5rem;
 }
 
-.colmar {
+.colmar /*logo */ {
   font-weight: 600;
 }
 
-.academy {
+.academy /*logo */ {
   color: #999;
 }
 
@@ -71,7 +75,11 @@ nav {
   margin: 0 auto;
 }
 
-.large_capsule {
+.cointainer_mobile {
+  display: none;
+}
+
+.large_capsule  {
   width: 60%;
   overflow: hidden;
   padding: 1.5rem 2rem;
@@ -111,7 +119,7 @@ h3 {
   color: white;
   text-align: center;
   width: 70%;
-  padding: 0.5rem;
+  padding: 1rem;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -166,6 +174,13 @@ p {
   height: auto;
   display: block;
 }
+
+.container_mobile {
+  display: none;
+}
+
+
+
 
 h4 {
   font-size: 1.2rem;
@@ -266,3 +281,116 @@ footer ul {
 footer ul li {
   padding-right: 1rem;
 }
+
+/* for mobile */
+@media only screen and (max-width: 768px) {
+  .desktop_nav {
+    display: none;
+  }
+
+ .mobile_nav {
+    position: fixed;
+    width: 100%;
+    background-color: White;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+ .menu_mobile {
+    align-items: center;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+
+ .menu_mobile img {
+   min-height: 60%;
+   width: auto;
+ }
+
+ .cointainer {
+  display: none;
+}
+
+ .cointainer_mobile {
+  display: flex;
+  flex-direction: column;
+  }
+
+ .mobile_image_container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+ .mobile_image_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ .mobile_medium_capsule {
+  margin: 2rem;
+  min-width: 90%;
+  justify-content: center;
+}
+
+ .mobile_medium_capsule h1 , h3 {
+   min-width: 100%;
+}
+
+ .start_button {
+   margin: 1rem auto;
+   min-width: 93%;
+}
+
+.landscape_capsule {
+  flex-direction: column;
+  padding: 0;
+}
+
+.square_container {
+  display: block;
+  height: 12rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.square_container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ .mobile_text_container {
+   display: flex;
+   flex-direction: column;
+   margin: 1rem;
+   max-width: 100%;
+ }
+
+ .mobile_sixpack_container {
+   display: flex;
+   flex-direction: column;
+   margin: 1rem;
+ }
+
+ .mobile_sixpack_container h4 {
+   background-color: #ccc;
+   display: block;
+   margin: .5rem;
+   padding: 1rem 1rem 1.5rem 1rem;
+   font-size: 1.5rem;
+ }
+footer {
+  padding-top: 2.5rem;
+  background-color: #fff;
+
+}
+footer ul {
+  display: none;
+}
+}
+/* end mobile */

@@ -5,6 +5,7 @@
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
 
@@ -12,7 +13,7 @@
 <div class="maincontainer">
 
   <!--navigation bar-->
-  <nav>
+  <nav class="desktop_nav">
     <div class="logo_container">
       <div class="logoicon">
         <img src="resources/images/ic-logo.svg" alt="Colmar Academy logotype">
@@ -32,6 +33,17 @@
     </div>
   </nav>
   <!--navigation bar ends-->
+
+  <!-- mobile navigation bar -->
+  <nav class="mobile_nav">
+    <div class="menu_mobile">
+   <img  src="resources/images/ic-logo.svg" alt="Colmar Academy logotype">
+      <img src="resources/images/ic-on-campus.svg" alt="on campus icon">
+      <img src="resources/images/ic-online.svg" alt="online icon">
+      <img src="resources/images/ic-login.svg" alt="sign in icon">
+    </div>
+  </nav>
+  <!--mobile navigation bar ends -->
 
   <!--spacer out of desperation, how the hell do you move the rest of the content down-->
   <div class="spacer_four-rem">
@@ -55,10 +67,24 @@
   </div>
   <!--Learn banner ends-->
 
+  <!-- mobile learn banner  -->
+  <div class="cointainer_mobile gray_background">
+    <div class="mobile_image_container">
+    <img src="resources/images/banner.jpg" alt="group studing">
+  </div>
+  <div class="mobile_medium_capsule">
+      <h1>Learn something new every day</h1>
+      <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+      <div class="start_button">
+        Start here
+      </div>
+    </div>
+  </div>
+  <!-- end mobile learn banner -->
+
   <!--orientation section begins-->
-  <div class= "container lighter_background">
-   <div class="subcontainer"> <!--this is exceptional to facilitate placement-->
-    <div class= "large_capsule">
+  <div class= "cointainer lighter_background">
+    <div class= "large_capsule desktop">
       <img src="resources/images/information-main.jpg" alt="man reading">
       <h2>It doesn't hurt to keep practicing</h2>
       <p>“Cras et cursus eros. Donec condimentum mi vitae magna tristique placerat. Aliquam lacinia eleifend lectus, id scelerisque odio tincidunt sed. Curabitur scelerisque augue ante, sed placerat nibh luctus quis. Aenean quis mi odio. Nam risus ligula. ”</p>
@@ -112,13 +138,66 @@
       </div>
 
     </div>
-  </div>
-  </div>
 
+  </div>
   <!--orientation section ends-->
 
+  <!-- mobile orientation section -->
+  <div class= "cointainer_mobile lighter_background">
+   <div class="subcontainer"> <!--this is exceptional to facilitate placement-->
+
+    <div class="mobile_medium_capsule">
+
+      <div class="landscape_capsule">
+        <div class="square_container">
+          <img src="resources/images/information-orientation-mobile.jpg" alt="people walking">
+        </div>
+
+        <div class="mobile_text_container">
+          <h4>Orientation date</h4>
+          <p>Tue 10/11 & Wed 10/12: 8am–3pm</p>
+          <div class="read_more">
+            Read read more
+          </div>
+        </div>
+      </div>
+
+      <div class="landscape_capsule">
+        <div class="square_container">
+          <img src="resources/images/information-campus-mobile.jpg" alt="classroom interior">
+        </div>
+
+        <div class="mobile_text_container">
+          <h4>Our campus</h4>
+          <p>Find which campus is closer by you</p>
+          <div class="read_more">
+            Read read more
+          </div>
+        </div>
+      </div>
+
+      <div class="landscape_capsule">
+        <div class="square_container">
+          <img src="resources/images/information-guest-lecture-mobile.jpg" alt="guest lecturer">
+        </div>
+
+        <div class="mobile_text_container">
+          <h4>Our guest lecture</h4>
+          <p>Join a keynote with Oliver Sacks about music in the medical treatment</p>
+          <div class="read_more">
+            Read read more
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- end mobile orientation section -->
+
+
   <!--learning section begins-->
-  <div class="container gray_background">
+  <div class="cointainer gray_background">
     <h2><div class="center">Start learning </div></h2>
 
     <div class="sixpack_container ">
@@ -193,9 +272,23 @@
   </div>
   <!--learning section ends-->
 
+<!-- mobile learning section begins-->
+<div class="cointainer_mobile lighter_background">
+  <h2><div class="center">Start learning </div></h2>
+  <div class="mobile_sixpack_container lighter_background">
+          <h4>Software engineering</h4>
+          <h4>Computer art</h4>
+          <h4>Design</h4>
+          <h4>Data</h4>
+          <h4>Business</h4>
+          <h4>Marketing</h4>
+        </div>
+      </div>
+<!--mobile learning section ends -->
+
   <!--Thesis exhibit section begins-->
-  <div class="container lighter_background">
-    <h2><div class="center">Thesis exhibit</div></h2>
+  <div class="cointainer lighter_background">
+    <h2><div class="center">Thesis exhibits</div></h2>
 
     <div class="subcontainer"> <!--this is exceptional to facilitate placement-->
       <div class="large_capsule">
@@ -236,6 +329,17 @@
     </div>
   </div>
   <!--Thesis exhibit section ends-->
+
+  <!--Mobile Thesis exhibit section begins-->
+  <div class="cointainer_mobile lighter_background">
+    <h2><div class="center">Thesis exhibits</div></h2>
+        <div class="media_container">
+          <video src="resources/videos/thesis.mp4" width="60%" height="auto" controls>
+          Your browser does not support the video tag.
+          </video>
+        </div>
+  </div>
+  <!--Mobile Thesis exhibit section ends-->
 
   <footer>
     <div class="copyright">
