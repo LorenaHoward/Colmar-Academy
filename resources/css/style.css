@@ -75,6 +75,11 @@ nav {
   margin: 0 auto;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .cointainer_mobile {
   display: none;
 }
