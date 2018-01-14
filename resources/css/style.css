@@ -184,9 +184,6 @@ p {
   display: none;
 }
 
-
-
-
 h4 {
   font-size: 1.2rem;
   font-weight: 600;
@@ -219,10 +216,16 @@ h2 .center {
   margin: 0 auto;
 }
 
+.stripe_container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
 .portrait_capsule {
-  width: 30%;
+  width: 31.5%;
   background-color: #eee;
-  margin-right: 2rem;
   padding-bottom: 3rem;
   margin-bottom: 2rem;
 }
